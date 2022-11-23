@@ -1,0 +1,596 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  overflow-x:clip;
+}
+.main{
+  display: flex;
+}
+.sidenav{
+  width: 237px;
+  height: 100%;
+  background: #5A49E3;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: block;
+}
+.drop h1{
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 20px;
+/* identical to box height, or 167% */
+margin-left: 22px;
+color: #64748B;
+}
+a{
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 22px;
+margin-left: 0.75em;
+/* identical to box height, or 157% */
+color: #E2E8F0;
+  text-decoration: none; 
+}
+.logo{
+  margin-top: 60px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+.drop{
+  margin-top: 34px;
+}
+.nav-item{
+  margin-left: 0.95em;
+  width:208px;
+  min-height:40px;
+  display: block;
+  padding: 0.62em 0.7em;
+  align-items: center;
+  background-color: none;
+  transition: background-color .25s;
+}
+.nav-item:hover{
+  background: #2A235B;
+  border-radius: 2px;
+}
+.nav-title{
+  vertical-align: middle;
+  display: flex;
+  justify-content: space-between;
+}
+.ic{
+  vertical-align: middle;
+}
+.arrw{
+  vertical-align: middle;
+}
+.cursor{
+  cursor: pointer;
+  transition: transform .3s;
+  transform: rotate(0deg);
+}
+.nav-item.open .cursor{
+  transform: rotate(180deg);
+  transition: transform .3s;
+}
+.nav-content{
+  height: 0;
+  overflow: hidden;
+}
+.nav-item.open .nav-content{
+  height:auto;
+  width: 208px;
+  padding-top: .7em;
+  transition: background-color .25s;
+  background-color:none;
+}
+.nav-item.open .nav-content:hover{
+}
+.nav-content a{
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 22px;
+color: #9DA0A5;
+}
+.nav-text{
+  pointer-events: none;
+}
+.linked{
+  pointer-events: auto;
+}
+ .Side-pad{
+  padding-left: 260px;
+ }
+ .tab-box{
+  width: 1002px;
+ }
+ .tab-img{
+  width: 47px;
+  height: 47px;
+ }
+ .feat-port{
+  height:239px;
+ }
+ .feat-tab-coin{
+  width: 300px;
+ }
+ .Feat{
+  display: block;
+ }
+ .feat-tab-coin-div{
+  display: flex;
+ }
+ .feat-ban{
+  position: relative;
+  left: 72px;
+  top: 27px;
+ }
+ .feat-head{
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+letter-spacing: -0.222222px;
+padding-bottom: 26px;
+color: #1E293B;
+ }
+ .tab-box th{
+  text-align: left;
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 20px;
+/* identical to box height, or 167% */
+opacity: 80%;
+color: #5A49E3;
+ }
+ .feat-col{
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 22px;
+/* identical to box height, or 157% */
+color: #1E293B;
+ }
+ .gbp{
+  opacity: 60%;
+ }
+ .tab-wrapper{
+  padding-left: 107px;
+  padding-top: 180px;
+ }
+ .price{
+  color: #10B981;
+ }
+ .changered{
+  color: red;
+ }
+ .changegreen{
+  color:  #10B981;
+ }
+ .name-wrap{
+  padding-top:15px;
+  padding: 7px;
+  display: flex;
+ }
+ .feat-row{
+height: 59px;
+ }
+ .test{
+  width:50px;
+  height:50px;
+ }
+ .chart-box{
+  width: 860px;
+  height:250px;
+  padding-bottom: 60px;
+ }
+ .chart-wrap{
+  padding-left: 100px;
+ }
+ .chart-wrap h1{
+font-family: 'Inter';
+font-weight: 800;
+font-size: 37px;
+line-height:41px;
+/* or 133% */
+letter-spacing: -0.416667px;
+color: #1E293B;
+ }
+ .chart-wrap h3{
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 20px;
+/* or 167% */
+letter-spacing: 0.216667px;
+color: #94A3B8;
+ }
+ .chart-wrap h2{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 17.5px;
+line-height: 24px;
+/* or 150% */
+letter-spacing: -0.222222px;
+color: #1E293B;
+   }
+   .foot p{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 20px;
+/* or 167% */
+color: white;
+    padding-top: 230px;
+    left: 40%;
+    position: absolute;
+   }
+   .buy-box{
+    width: 283px;
+    height: 194px;
+background:#A1ABD4;
+border-radius: 23px;
+margin-left: 5em;
+   }
+   .buy-box button{
+    background: #5A49E3;
+    border: none;
+    width: 74px;
+height: 38px;
+border-radius: 4px;
+margin-left: 2.3em;
+margin-top: 1em;
+   }
+   .buy-box a{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 22px;
+/* identical to box height, or 157% */
+color: #FFFFFF;
+   }
+   .buy-box h1{
+   font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 40px;
+/* or 133% */
+letter-spacing: -0.25px;
+color: #1E293B;
+margin-left: 1em;
+padding-top: 1em;
+   }
+   .top-box{
+    display: flex;
+   }
+   footer{
+    margin-left: -24px;
+   }
+   .over{
+    margin-left:11em;
+    margin-right: auto;
+    width: 250px;
+    opacity: 90%;
+    height: 150px;
+    background: #C7D2FE
+   }
+   .boxes{
+    margin-left: 2.1em;
+   }
+   .buy-top{
+   margin-left: 140px;
+   margin-top: 40px;
+    width:500px;
+   }
+   .buy-but{
+    background: #5A49E3;
+    border: none;
+    width: 74px;
+height: 38px;
+border-radius: 4px;
+margin-left: 2.3em;
+margin-top: 1em;
+   }
+   .buy-but-p{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 22px;
+/* identical to box height, or 157% */
+color: #FFFFFF;
+   }
+   .cred{
+    margin: 8px;
+    margin-left: 22px;
+   }
+   .cred h2{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 20px;
+/* identical to box height, or 167% */
+color: #64748B;
+   }
+   .cred p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    /* identical to box height, or 157% */
+    color: #FFFFFF;
+   }
+   .Feat fieldset{
+    border:none;
+   }
+   .radGr{
+    margin-bottom: 34px;
+    width:160px;
+    background-color:#5A49E3 ;
+    padding-left: 20px;
+    padding-top:9px;
+    height:40px;
+    border-radius: 20px;
+   }
+   .radGr label{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+letter-spacing: -0.222222px;
+color: white;
+padding-right: 10px;
+   }
+   .log{
+    margin-left: 20px;
+    margin-top: 5px;
+    background-color:#2A235B;
+   }
+   .log a{
+    margin-left: 4px;
+   }
+
+.note{
+  padding-top: 9px;
+  background-color:#2A235B;
+  padding-bottom: 9px;
+  border-radius: 9px;
+  width: 650px;
+}
+.note h2{
+ color: white;
+  margin-left: 37px; 
+  margin-right: none;
+}
+
+
+.chnge{
+  cursor: pointer;
+ 
+}
+
+.buy-top h2{
+  color:#9DA0A5;
+}
+.buy-top .chart-wrap{
+  
+  padding-left: 0px;
+  padding-bottom: 20px;
+}
+
+.buy-flex{
+  display: flex;
+}
+.buy-flex .ban{
+  position: absolute;
+  margin-left: auto;
+  right:0px;
+}
+
+.conf-box{
+  margin-left: 0px;
+  padding-left: 50px;
+  border-radius: 20px;
+  padding-top: 50px;
+  background-color:#5A49E3;
+  width: 450px;
+}
+
+
+.conf-box button{
+  margin-left: 0px;
+  
+}
+
+.conf-box h1{
+  padding-bottom: 15px;
+  color: white;
+}
+
+.conf-box input{
+  height:40px;
+  width: 300px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  padding-left: 10px;
+  
+}
+.conf-box h2{
+  color: white;
+}
+
+.execute{
+  margin-left: 70px;
+  margin-top: 30px;
+  padding-bottom: 300px;
+}
+.execute .buy-but{
+  background-color:#2A235B;
+  margin-bottom: 20px;
+}
+.ex-flex{
+  padding-top: 30px;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+.ex-flex h2{
+  color: #9DA0A5;
+}
+
+.sell td{
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 22px;
+/* identical to box height, or 157% */
+
+
+color: #1E293B;
+
+}
+
+.sell button{
+  margin-left: 0px;
+}
+.Sell{
+ margin-left: 30px;
+ margin-top: 30px;
+ height: 800px;
+}
+.chart-wrap .sell h1{
+  padding-left: 0px;
+  margin-left: 0px;
+}
+
+.Sell h1{
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 40px;
+/* identical to box height, or 133% */
+
+letter-spacing: -0.25px;
+
+color: #1E293B;
+}
+
+.Sign label{
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 22px;
+/* identical to box height, or 157% */
+
+
+color: #475569;
+}
+.Sign input{
+  background: #FFFFFF;
+border: 1px solid #A5B4FC;
+box-shadow: 0px 1px 2px rgba(15, 23, 42, 0.04);
+border-radius: 4px;
+width: 350px;
+height: 40px;
+padding-left: 10px;
+margin-bottom: 15px
+}
+.Sign h1{
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 40px;
+/* identical to box height, or 133% */
+
+letter-spacing: -0.25px;
+margin-top: 25px;
+color: #1E293B;
+}
+
+.Sign{
+  display: block;
+  margin-left: 18em;
+  margin-top: 10em;
+}
+.Sign button{
+  background: #6366F1;
+box-shadow: 0px 1px 2px rgba(15, 23, 42, 0.08);
+border-radius: 4px;
+width:78px;
+height: 38px;
+border: none;font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 22px;
+/* identical to box height, or 157% */
+
+
+color: #FFFFFF;
+
+
+}
+
+.log-flex{
+  display: flex;
+  height: 730px;
+}
+.log-ban{
+  margin-left: auto;
+  right: 80px;
+  position: absolute;
+  z-index: -1;
+}
+.Sign h2{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  /* identical to box height, or 157% */
+  
+  
+  color: red;
+}
+
+.top-buy{
+  margin-bottom: 30px;
+  padding-left: 10px;
+}
+.top-sell{
+  padding-top: 20px;
+
+}
+
+.top-fin{
+  padding-bottom: 30px;
+}

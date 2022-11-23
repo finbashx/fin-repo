@@ -1,0 +1,53 @@
+[
+    {
+        "title": "Featured",
+        "icon": "/navicons/feat.svg",
+        "childrens": [
+            {
+                "title": "Featured",
+                "path": "/feat"
+            }
+        ]
+    },
+    {
+        "title": "Buy",
+        "icon": "/navicons/buy.svg",
+        "childrens": [
+            {
+                "title": "Buy Crypto",
+                "path": "/buy"
+            }
+        ]
+    },
+    {
+        "title": "My Crypto",
+        "icon": "/navicons/stock.svg",
+        "childrens": [
+            {
+                "title": "View My Crypto",
+                "path": "/sell"
+            }
+        ]
+    },
+    {
+        "title": "Account",
+        "icon": "/navicons/acc.svg",
+        "childrens": [
+            {
+                "title": "Account",
+                "path": "/sign"
+            }
+            
+        ]
+    },
+    {
+        "title": "About",
+        "icon": "/navicons/about.svg",
+        "childrens": [
+            {
+                "title": "About",
+                "path": "/"
+            }
+        ]
+    }
+]
