@@ -1,4 +1,4 @@
-A CRUD website that i designed and developed.
+A CRUD website that i created.
 My stack is: React, Express, SQL.
 I have node_modules deleted for size, but kept package.json meaning they can be restored at any point.
 Additionally the SQL schema hasnt been uploaded as that was running on local host for testing.
